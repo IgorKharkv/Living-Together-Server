@@ -2,6 +2,8 @@ package com.example.livingtogether.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
 @Data
@@ -10,13 +12,15 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Entity
 public class Passage {
 
-    private long ID;
+    @Id
+    private long id;
 
-    private long CITIZEN_ID;
+    private long citizen_id;
 
-    private Date START_DATE;
+    private Date start_date;
 
-    private String ERROR_MSG;
+    private String error_msg;
 }

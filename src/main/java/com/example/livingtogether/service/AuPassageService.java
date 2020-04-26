@@ -17,19 +17,33 @@ public class AuPassageService {
     static {
         // Initialize Data
         AuPassage passage1 = AuPassage.builder()
-                .PI_ID_NUM(123456789)
-                .PI_DATE(new Date())
-                .ERROR_MSG("no data")
+                .pi_id_num(123456789)
+                .pi_date(new Date())
+                .error_msg("no_data_found")
                 .build();
 
         AuPassage passage2 = AuPassage.builder()
-                .PI_ID_NUM(1000000009)
-                .PI_DATE(new Date())
-                .ERROR_MSG("no data")
+                .pi_id_num(1000000009)
+                .pi_date(new Date())
+                .error_msg("no_data_found")
+                .build();
+
+        AuPassage passage3 = AuPassage.builder()
+                .pi_id_num(123456789)
+                .pi_date(new Date())
+                .error_msg("unique_constraint")
+                .build();
+
+        AuPassage passage4 = AuPassage.builder()
+                .pi_id_num(1000000009)
+                .pi_date(new Date())
+                .error_msg("connection_error")
                 .build();
 
         auPassages.add(passage1);
         auPassages.add(passage2);
+        auPassages.add(passage3);
+        auPassages.add(passage4);
     }
 
     public List<AuPassage> getAupassages() {

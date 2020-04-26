@@ -16,21 +16,29 @@ public class PassageService {
     static {
         // Initialize Data
         Passage passage1 = Passage.builder()
-                .ID(1234)
-                .CITIZEN_ID(123456789)
-                .START_DATE(new Date())
-                .ERROR_MSG("no data")
+                .id(1234)
+                .citizen_id(123456789)
+                .start_date(new Date())
+                .error_msg("no_data_found")
                 .build();
 
         Passage passage2 = Passage.builder()
-                .ID(1234)
-                .CITIZEN_ID(123456789)
-                .START_DATE(new Date())
-                .ERROR_MSG("no data")
+                .id(1234)
+                .citizen_id(123456789)
+                .start_date(new Date())
+                .error_msg("unique_constraint")
+                .build();
+
+        Passage passage3 = Passage.builder()
+                .id(1234)
+                .citizen_id(123456789)
+                .start_date(new Date())
+                .error_msg("connection_error")
                 .build();
 
         passages.add(passage1);
         passages.add(passage2);
+        passages.add(passage3);
     }
 
     public List<Passage> getPassages() {

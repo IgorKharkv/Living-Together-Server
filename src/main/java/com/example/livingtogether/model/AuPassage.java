@@ -1,22 +1,25 @@
 package com.example.livingtogether.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
 @Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Entity
 public class AuPassage {
 
-    private long PI_ID_NUM;
+    @Id
+    private long pi_id_num;
 
-    private Date PI_DATE;
+    private Date pi_date;
 
-    private String ERROR_MSG;
+    private String error_msg;
 }
