@@ -46,15 +46,15 @@ public class AuPassageService {
         auPassages.add(passage4);
     }
 
-    public List<AuPassage> getAupassages() {
+    public List<AuPassage> getAuPassages() {
         return auPassages;
     }
 
-    public List<AuPassage> fixConnectionAuPassages(List<AuPassage> passages) {
-        return null;
+    public boolean fixConnectionAuPassages(List<AuPassage> passages) {
+        return true;
     }
 
-    public List<AuPassage> fixLogicAuPassages(List<AuPassage> passages) {
-        return null;
+    public boolean fixLogicAuPassages(List<AuPassage> passages) {
+        return true;
     }
 }

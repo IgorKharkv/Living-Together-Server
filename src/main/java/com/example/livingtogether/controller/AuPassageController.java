@@ -16,21 +16,21 @@ public class AuPassageController {
 
     @GetMapping("/auConnectionPassages")
     public List<AuPassage> connectionAuPassages() {
-        return auPassageService.getAupassages();
+        return auPassageService.getAuPassages();
     }
 
     @GetMapping("/auLogicPassages")
     public List<AuPassage> LogicAuPassages() {
-        return auPassageService.getAupassages();
+        return auPassageService.getAuPassages();
     }
 
     @PostMapping("/fixAuConnectionPassages")
-    public List<AuPassage> fixConnectionAuPassages(@RequestBody List<AuPassage> auPassages) {
+    public boolean fixConnectionAuPassages(@RequestBody List<AuPassage> auPassages) {
         return auPassageService.fixConnectionAuPassages(auPassages);
     }
 
     @PostMapping("/fixAuLogicPassages")
-    public List<AuPassage> fixLogicAuPassages(@RequestBody List<AuPassage> auPassages) {
+    public boolean fixLogicAuPassages(@RequestBody List<AuPassage> auPassages) {
         return auPassageService.fixLogicAuPassages(auPassages);
     }
 }

@@ -1,6 +1,5 @@
 package com.example.livingtogether.service;
 
-import com.example.livingtogether.model.AuPassage;
 import com.example.livingtogether.model.Passage;
 import org.springframework.stereotype.Service;
 
@@ -45,11 +44,7 @@ public class PassageService {
         return passages;
     }
 
-    public List<Passage> fixConnectionPassages(List<Passage> passages) {
-        return null;
-    }
+    public boolean fixConnectionPassages(List<Passage> passages) { return true; }
 
-    public List<Passage> fixLogicPassages(List<Passage> passages) {
-        return null;
-    }
+    public boolean fixLogicPassages(List<Passage> passages) { return true; }
 }

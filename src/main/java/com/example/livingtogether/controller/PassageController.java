@@ -25,12 +25,12 @@ public class PassageController {
     }
 
     @PostMapping("/fixConnectionPassages")
-    public List<Passage> fixConnectionPassages(@RequestBody List<Passage> passages) {
+    public boolean fixConnectionPassages(@RequestBody List<Passage> passages) {
         return passageService.fixConnectionPassages(passages);
     }
 
     @PostMapping("/fixLogicPassages")
-    public List<Passage> fixLogicPassages(@RequestBody List<Passage> passages) {
+    public boolean fixLogicPassages(@RequestBody List<Passage> passages) {
         return passageService.fixLogicPassages(passages);
     }
 }
