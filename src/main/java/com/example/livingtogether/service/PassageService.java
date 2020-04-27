@@ -15,22 +15,22 @@ public class PassageService {
     static {
         // Initialize Data
         Passage passage1 = Passage.builder()
-                .id(1234)
+                .id(3234)
                 .citizen_id(123456789)
                 .start_date(new Date())
                 .error_msg("no_data_found")
                 .build();
 
         Passage passage2 = Passage.builder()
-                .id(1234)
-                .citizen_id(123456789)
+                .id(2234)
+                .citizen_id(223456789)
                 .start_date(new Date())
                 .error_msg("unique_constraint")
                 .build();
 
         Passage passage3 = Passage.builder()
                 .id(1234)
-                .citizen_id(123456789)
+                .citizen_id(323456789)
                 .start_date(new Date())
                 .error_msg("connection_error")
                 .build();

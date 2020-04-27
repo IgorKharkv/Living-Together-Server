@@ -23,19 +23,19 @@ public class AuPassageService {
                 .build();
 
         AuPassage passage2 = AuPassage.builder()
-                .pi_id_num(1000000009)
+                .pi_id_num(500000009)
                 .pi_date(new Date())
                 .error_msg("no_data_found")
                 .build();
 
         AuPassage passage3 = AuPassage.builder()
-                .pi_id_num(123456789)
+                .pi_id_num(323456789)
                 .pi_date(new Date())
                 .error_msg("unique_constraint")
                 .build();
 
         AuPassage passage4 = AuPassage.builder()
-                .pi_id_num(1000000009)
+                .pi_id_num(2000000009)
                 .pi_date(new Date())
                 .error_msg("connection_error")
                 .build();
