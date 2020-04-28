@@ -29,8 +29,8 @@ public class PassageController {
         return passageService.fixConnectionPassages(passages);
     }
 
-    @PostMapping("/fixLogicPassages")
-    public boolean fixLogicPassages(@RequestBody List<Passage> passages) {
-        return passageService.fixLogicPassages(passages);
+    @PostMapping("/fixLogicPassage")
+    public boolean fixLogicPassage(@RequestBody Passage passage) {
+        return passageService.fixLogicPassage(passage);
     }
 }

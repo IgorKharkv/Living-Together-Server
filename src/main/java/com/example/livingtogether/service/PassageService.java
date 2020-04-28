@@ -46,5 +46,5 @@ public class PassageService {
 
     public boolean fixConnectionPassages(List<Passage> passages) { return true; }
 
-    public boolean fixLogicPassages(List<Passage> passages) { return true; }
+    public boolean fixLogicPassage(Passage passage) { return true; }
 }

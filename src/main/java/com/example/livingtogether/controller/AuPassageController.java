@@ -29,8 +29,8 @@ public class AuPassageController {
         return auPassageService.fixConnectionAuPassages(auPassages);
     }
 
-    @PostMapping("/fixAuLogicPassages")
-    public boolean fixLogicAuPassages(@RequestBody List<AuPassage> auPassages) {
-        return auPassageService.fixLogicAuPassages(auPassages);
+    @PostMapping("/fixAuLogicPassage")
+    public boolean fixLogicAuPassage(@RequestBody AuPassage auPassage) {
+        return auPassageService.fixLogicAuPassage(auPassage);
     }
 }

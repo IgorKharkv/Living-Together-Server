@@ -54,7 +54,7 @@ public class AuPassageService {
         return true;
     }
 
-    public boolean fixLogicAuPassages(List<AuPassage> passages) {
+    public boolean fixLogicAuPassage(AuPassage passage) {
         return true;
     }
 }
